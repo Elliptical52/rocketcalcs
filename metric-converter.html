@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Metric Value Converter</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <h1>Metric Value Converter</h1>
+    <h3><a href="index.html">(Go Back)</a></h3>
+    <hr>
+    <form>
+        Value: <input type="number" id="met-value">
+        <br>
+        <button type="button" onclick="calculateMetricValues()">Calculate Metric Values</button>
+    </form>
+        <br>
+        <table class="academia">
+            <tr>
+                <th>×0.0001</th>
+                <td id="met-d10000">0</td>
+            </tr>
+            <tr>
+                <th>×0.001</th>
+                <td id="met-d1000">0</td>
+            </tr>
+            <tr>
+                <th>×0.01</th>
+                <td id="met-d100">0</td>
+            </tr>
+            <tr>
+                <th>×0.1</th>
+                <td id="met-d10">0</td>
+            </tr>
+            
+            <tr>
+                <th>×10</th>
+                <td id="met-t10">0</td>
+            </tr>            
+            <tr>
+                <th>×100</th>
+                <td id="met-t100">0</td>
+            </tr>            
+            <tr>
+                <th>×1000</th>
+                <td id="met-t1000">0</td>
+            </tr>            
+            <tr>
+                <th>×10000</th>
+                <td id="met-t10000">0</td>
+            </tr>
+        </table>
+    </form>
+    <h3>Scale Reference:</h3>
+    <table class="academia">
+        <tr>
+            <th>#</th>
+            <th>Nano</th>
+            <th>Micro</th>
+            <th>Milli</th>
+            <th>Centi</th>
+            <th>Deci</th>
+            <th>Base</th>
+            <th>Deka</th>
+            <th>Hecto</th>
+            <th>Kilo</th>
+            <th>Mega</th>
+            <th>Giga</th>
+        </tr>
+        <tr>
+            <th>Nano</th>
+            <td>1</td>
+            <td>10</td>
+            <td>100</td>
+            <td>1,000</td>
+            <td>10,000</td>
+            <td>100,000</td>
+            <td>1,000,000</td>
+            <td>10,000,000</td>
+            <td>100,000,000</td>
+            <td>1,000,000,000</td>
+            <td>10,000,000,000</td>
+        </tr>
+        <tr>
+            <th>Micro</th>
+            <td>0.1</td>
+            <td>1</td>
+            <td>10</td>
+            <td>100</td>
+            <td>1,000</td>
+            <td>10,000</td>
+            <td>100,000</td>
+            <td>1,000,000</td>
+            <td>10,000,000</td>
+            <td>100,000,000</td>
+            <td>1,000,000,000</td>
+        </tr>
+        <tr>
+            <th>Milli</th>
+            <td>0.01</td>
+            <td>0.1</td>
+            <td>1</td>
+            <td>10</td>
+            <td>100</td>
+            <td>1,000</td>
+            <td>10,000</td>
+            <td>100,000</td>
+            <td>1,000,000</td>
+            <td>10,000,000</td>
+            <td>100,000,000</td>
+        </tr>
+        <tr>
+            <th>Centi</th>
+            <td>0.001</td>
+            <td>0.01</td>
+            <td>0.1</td>
+            <td>1</td>
+            <td>10</td>
+            <td>100</td>
+            <td>1,000</td>
+            <td>10,000</td>
+            <td>100,000</td>
+            <td>1,000,000</td>
+            <td>10,000,000</td>
+        </tr>
+                <tr>
+            <th>Deci</th>
+            <td>0.0001</td>
+            <td>0.001</td>
+            <td>0.01</td>
+            <td>0.1</td>
+            <td>1</td>
+            <td>10</td>
+            <td>100</td>
+            <td>1,000</td>
+            <td>10,000</td>
+            <td>100,000</td>
+            <td>1,000,000</td>
+        </tr>
+        <tr>
+            <th>Base</th>
+            <td>0.00001</td>
+            <td>0.0001</td>
+            <td>0.001</td>
+            <td>0.01</td>
+            <td>0.1</td>
+            <td>1</td>
+            <td>10</td>
+            <td>100</td>
+            <td>1,000</td>
+            <td>10,000</td>
+            <td>100,000</td>
+        </tr>
+        <tr>
+            <th>Deka</th>
+            <td>0.000001</td>
+            <td>0.00001</td>
+            <td>0.0001</td>
+            <td>0.001</td>
+            <td>0.01</td>
+            <td>0.1</td>
+            <td>1</td>
+            <td>10</td>
+            <td>100</td>
+            <td>1,000</td>
+            <td>10,000</td>
+        </tr>
+        <tr>
+            <th>Hecto</th>
+            <td>0.0000001</td>
+            <td>0.000001</td>
+            <td>0.00001</td>
+            <td>0.0001</td>
+            <td>0.001</td>
+            <td>0.01</td>
+            <td>0.1</td>
+            <td>1</td>
+            <td>10</td>
+            <td>100</td>
+            <td>1,000</td>
+        </tr>
+        <tr>
+            <th>Kilo</th>
+            <td>0.00000001</td>
+            <td>0.0000001</td>
+            <td>0.000001</td>
+            <td>0.00001</td>
+            <td>0.0001</td>
+            <td>0.001</td>
+            <td>0.01</td>
+            <td>0.1</td>
+            <td>1</td>
+            <td>10</td>
+            <td>100</td>
+        </tr>
+        <tr>
+            <th>Mega</th>
+            <td>0.00000000001</td>
+            <td>0.0000000001</td>
+            <td>0.000000001</td>
+            <td>0.00000001</td>
+            <td>0.0000001</td>
+            <td>0.000001</td>
+            <td>0.00001</td>
+            <td>0.0001</td>
+            <td>0.001</td>
+            <td>0.01</td>
+            <td>0.1</td>
+        </tr>
+        <tr>
+            <th>Giga</th>
+            <td>0.000000000001</td>
+            <td>0.00000000001</td>
+            <td>0.0000000001</td>
+            <td>0.000000001</td>
+            <td>0.00000001</td>
+            <td>0.0000001</td>
+            <td>0.000001</td>
+            <td>0.00001</td>
+            <td>0.0001</td>
+            <td>0.001</td>
+            <td>0.01</td>
+        </tr>
+    </table>
+
+    </table>
+    
+</body>
+</html>

@@ -1,0 +1,105 @@
+html {
+    color: rgb(68, 68, 68);
+    background-color: #eeeeee;
+    line-height: 24px;
+    margin-left: 12px
+}
+
+a:link {color: rgb(68, 68, 200)}
+a:visited {color: rgb(68, 68, 200)}
+a:hover {color: rgb(0, 0, 255)}
+a:active {color: rgb(112, 112, 255)}
+
+::selection {
+    background-color: rgba(107, 103, 228, 0.434);
+}
+
+.math {
+    font-size: large;
+    display: inline-block;
+    padding: 2px 4px;
+    background-color: #D8D8D8;
+    border: 2px solid #666666;
+    border-radius: 1px;
+    font-style: italic;
+    font-weight: bold;
+    white-space: nowrap;
+    overflow-x: auto;
+    font-family: 'Cambria Math', 'STIX Two Math', 'Times New Roman', serif; 
+}
+
+input {
+    font-size: medium;
+    border-radius: 6px;
+}
+
+button {
+    font-size: 100%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.page {
+    border: 2px solid #666666;
+    padding-top: 2px;
+    padding-left: 10px;
+    border-radius: 5px;
+}
+
+summary {
+    font-weight: bold;
+}
+
+details[open] p {
+    margin-left: 20px;
+    margin-top: 0px;
+}
+
+
+.academia table {
+	border-collapse: collapse;
+	border-spacing: 0;
+	width: auto;
+	/*max-width: 100%;*/
+	border-top: 2.27px solid black;
+	border-bottom: 2.27px solid black;
+	overflow-x: auto;	
+	box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+.academia th,
+.academia td {
+	border: 0 none;
+	padding: 0.51rem;
+	line-height: 1.1;
+    text-align: center;
+}
+
+.academia table > tbody > tr:first-child > td,
+.academia table > tbody > tr:first-child > th {
+	border-top: 1.36px solid black;
+}
+
+.academia table > tbody > tr:last-child > td,
+.academia table > tbody > tr:last-child > th {
+	border-bottom: 1.36px solid black;
+}
+
+.academia thead th {
+    background-color: white !important;
+    font-weight: 700;    
+    padding: 8px 9px 5px 9px;
+}
+
+.academia tr:nth-child(even) {
+      background-color: #cbcbcb ;
+}
+
+.academia tr:nth-child(odd) {
+      background-color: #e1e1e1 ;
+}
+
+.academia {
+    border: 3px solid #777777;
+}
+

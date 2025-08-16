@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TWR Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <h1>Thrust to Weight Calculator</h1>
+    <h3><a href="index.html">(Go Back)</a></h3>
+    <div class="math">F / mg</div>
+    <br>
+    <i>
+        F = Thrust
+        <br>
+        m = Mass
+        <br>
+        g = Acceleration due to Gravity
+    </i>
+    <br><hr>
+    <form>
+        <label>F (Thrust):</label>
+        <input id="twr-thrust" type="number"> newtons
+        <br>
+
+        <label>m (Mass):</label>
+        <input id="twr-mass" type="number"> kilograms
+        <br>
+
+        <label>g (Gravity):</label>
+        <input id="twr-gravity" type="number"> m/s<sup>2</sup>
+        <br>
+
+        <button type="button" onclick="calculateThrustToWeight()">Calculate TWR</button>
+
+        <h3 id="twr-result"></h3>
+    </form>
+</body>
+</html>

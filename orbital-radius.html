@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Orbital Radius Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <h1>Orbital Radius Calculator</h1>
+    <h3><a href="index.html">(Go Back)</a></h3>
+    <div class="math">r = GM / v<sup>2</sup></div>
+    <br>
+    <i>
+        G = Gravitational Constant (~6.67 • 10<sup>-11</sup> newtons)
+        <br>
+        M = Mass of Planet
+        <br>
+        v = Orbital Speed
+    </i>
+    <br><hr>
+    <form>
+        <label>M (Mass of Planet):</label>
+        <input id="or-mass" type="number"> kilograms
+        <br>
+
+        <label>v (Orbital Speed):</label>
+        <input id="or-speed" type="number"> meters / second
+        <br>
+
+        <button type="button" onclick="calculateOrbitalRadius()">Calculate Orbital Radius</button>
+
+        <h3 id="or-result"></h3>
+    </form>
+</body>
+</html>
